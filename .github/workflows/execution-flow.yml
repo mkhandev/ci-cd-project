@@ -85,4 +85,4 @@ jobs:
       - name: Generate report
         run: |
           echo "Something went wrong"
-          echo "${{ toJson(github)}}"
+          echo "${{ toJson(github) }}"
