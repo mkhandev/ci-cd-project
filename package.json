@@ -1,10 +1,11 @@
 {
-  "name": "02-basic-example",
+  "name": "ci-cd-example",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "lint": "eslint --ext .jsx --fix src",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run"
