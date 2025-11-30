@@ -78,6 +78,7 @@ jobs:
 
   report:
     needs: [lint, test, build, deploy]
+    if: failure()
     runs-on: ubuntu-latest
     steps:
       - name: Generate report
