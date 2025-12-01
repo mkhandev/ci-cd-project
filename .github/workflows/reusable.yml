@@ -7,10 +7,11 @@ on:
         required: false
         default: dist
         type: string
+
     outputs:
       result:
         description: The deployment result
-        value: ${{ steps.deploy.outputs.outcome }}
+        value: ${{ jobs.deploy.outputs.outcome }}
 
 jobs:
   deploy:
