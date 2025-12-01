@@ -82,23 +82,12 @@ jobs:
     with:
       artifact-name: dist-files
 
-    # runs-on: ubuntu-latest
-    # steps:
-    #   - name: Get build artifacts
-    #     uses: actions/download-artifact@v4
-    #     with:
-    #       name: dist-files
-    #   - name: Output contents
-    #     run: ls
-    #   - name: Deploy
-    #     run: echo "Deploying..."
-
   print-deploy-result:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Print deployment result
-        run: echo "Deployment Result: ${{ needs.deploy.outputs.result }}"
+        run: echo "${{ needs.deploy.outputs.result }}"
 
   report:
     needs: [lint, test, build, deploy]
