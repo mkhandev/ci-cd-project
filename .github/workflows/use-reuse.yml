@@ -87,7 +87,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print deployment result
-        run: echo "${{ needs.deploy.outputs.result }}"
+        run: echo "Deployment Result= ${{ needs.deploy.outputs.result }}"
 
   report:
     needs: [lint, test, build, deploy]
