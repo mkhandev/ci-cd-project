@@ -1,4 +1,4 @@
-name: "Get cache dependencies"
+name: Get cache dependencies
 description: "Action to get cached dependencies for the project"
 runs:
   using: "composite"
