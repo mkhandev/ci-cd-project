@@ -1,6 +1,6 @@
 name: "Get cache dependencies"
 description: "Action to get cached dependencies for the project"
-run:
+runs:
   using: "composite"
   steps:
     - name: Cache dependencies
