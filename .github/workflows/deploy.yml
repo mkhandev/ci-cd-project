@@ -12,7 +12,7 @@ jobs:
       - name: Load custom cache action
         uses: ./.github/actions/cache-use
         with:
-          caching: "false"
+          caching: "true"
       - name: Lint code
         run: npm run lint
   test:
